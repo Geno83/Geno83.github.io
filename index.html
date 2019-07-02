@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>My Chevy Volt Miles per Day</title>
+    </head>
+    <body>
+        <p id="p" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+        </p>
+        <script type="text/javascript">
+            var chevy = new Date(2018, 06, 14);
+            chevy;
+            var now = new Date();
+            var diff = now - chevy;
+            diff;
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            days;
+            var miles = days * 30;
+            miles;
+            console.log(miles);
+            var p = document.getElementById("p");
+            p.innerText = "Expected miles today = " + miles;
+        </script>
+
+    </body>
+</html>
